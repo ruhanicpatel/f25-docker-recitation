@@ -36,10 +36,45 @@ def get_section_info(section_id: str):
     # TODO Fix this to return correct values for correct sections.
     if section_id == "a":
         return {
-            "section": "section_name",
-            "start_time": "HH:MM",
-            "end_time": "HH:MM",
-            "ta": ["taName1", "taName2"]
+            "section": "a",
+            "start_time": "9:00",
+            "end_time": "9:50",
+            "ta": ["Hilton", "Timperly"]
+        }
+    if section_id == "b":
+        return {
+            "section": "b",
+            "start_time": "10:00",
+            "end_time": "10:50",
+            "ta": ["Hilton", "Timperly"]
+        }
+    if section_id == "c":
+        return {
+            "section": "c",
+            "start_time": "11:00",
+            "end_time": "11:50",
+            "ta": ["Hilton", "Timperly"]
+        }
+    if section_id == "d":
+        return {
+            "section": "d",
+            "start_time": "1:00",
+            "end_time": "1:50",
+            "ta": ["Hilton", "Timperly"]
+        }
+    if section_id == "e":
+        return {
+            "section": "e",
+            "start_time": "2:00",
+            "end_time": "2:50",
+            "ta": ["Hilton", "Timperly"]
+        }
+    if section_id == "f":
+        return {
+            "section": "f",
+            "start_time": "3:00",
+            "end_time": "3:50",
+            "ta": ["Hilton", "Timperly"]
         }
     else:
         raise HTTPException(status_code=404, detail="Invalid section id")
